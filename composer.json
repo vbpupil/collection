@@ -1,0 +1,25 @@
+{
+  "name": "Vbpupil/colection",
+  "description": "A simple Collection library providing a useful base to build upon.",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Dean Haines",
+      "email": "Vbpupil@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Vbpupil\\Collection\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\Vbpupil\\Collection\\": "test"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit" : "5.7.27"
+  }
+}

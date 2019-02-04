@@ -1,0 +1,31 @@
+<phpunit
+        colors="true"
+        processIsolation="false"
+        stopOnError="false"
+        stopOnFailure="false"
+        stopOnIncomplete="false"
+        stopOnSkipped="false"
+        stopOnRisky="false"
+        beStrictAboutTestsThatDoNotTestAnything="false"
+>
+    <testsuites>
+        <testsuite name="Default">
+            <directory suffix="Test.php">./test</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src</directory>
+            <exclude>
+                <file>./src/Cms/Renderer/RendererInterface.php</file>
+                <file>./src/Cms/Storage/ContentInterface.php</file>
+            </exclude>
+        </whitelist>
+    </filter>
+    <logging>
+        <!--<log type="coverage-html" target="build/coverage"/>-->
+        <log type="testdox-html" target="./docs/contract.html"/>
+        <!--<log type="coverage-clover" target="../docs/clover.xml"/>-->
+        <!--<log type="junit" target="build/logs/junit.xml" logIncompleteSkipped="false"/>-->
+    </logging>
+</phpunit>
