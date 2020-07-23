@@ -9,6 +9,9 @@
 
 namespace Vbpupil\Collection;
 
+use Vbpupil\Collection\Exception\CollectionException;
+use Vbpupil\Collection\Exception\KeyInUseException;
+
 /**
  * Class Collection
  * @package Vbpupil\Collection

@@ -7,7 +7,7 @@
  * @license: GPL V3.0+ See LICENSE.md
  */
 
-namespace Vbpupil\Collection;
+namespace Vbpupil\Collection\Exception;
 
 
 use Exception;
